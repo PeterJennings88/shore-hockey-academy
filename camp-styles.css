@@ -491,3 +491,10 @@
         grid-template-columns: 1fr;
     }
 }
+
+.provisional-note {
+    margin-top: 24px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}

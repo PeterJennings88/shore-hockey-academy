@@ -3,31 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Business & Agent Services | Shore Hockey Academy</title>
-    <meta name="description" content="Learn the business of hockey from Drew Shore, former NHL player turned top hockey agent. Career guidance, contract negotiation, and professional development.">
+    <title>Hockey Business Advisory | Shore Hockey Academy</title>
+    <meta name="description" content="Get hockey business guidance from Drew Shore on recruiting, contracts, and long-term career strategy for players and families.">
+    <link rel="canonical" href="https://shorehockeyacademy.com/hockey-business.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hockey Business Advisory | Shore Hockey Academy">
+    <meta property="og:description" content="Career planning, recruiting strategy, contract education, and family advisory for serious hockey pathways.">
+    <meta property="og:url" content="https://shorehockeyacademy.com/hockey-business.html">
+    <meta property="og:image" content="https://shorehockeyacademy.com/drew-shore.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hockey Business Advisory | Shore Hockey Academy">
+    <meta name="twitter:description" content="Career planning, recruiting strategy, contract education, and family advisory for serious hockey pathways.">
+    <meta name="twitter:image" content="https://shorehockeyacademy.com/drew-shore.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="business-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function gtag(){ window.dataLayer.push(arguments); };
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Shore Hockey Academy - Hockey Business Advisory",
+      "url": "https://shorehockeyacademy.com/hockey-business.html",
+      "areaServed": "United States",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      }
+    }
+    </script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
+<body data-page="hockey-business">
+    <nav class="navbar" aria-label="Primary">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" aria-label="Shore Hockey Academy home">
                 <span class="logo-text">SHORE</span>
                 <span class="logo-subtext">HOCKEY ACADEMY</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#programs">Programs</a></li>
                 <li><a href="summer-camp.html">Summer Camp</a></li>
                 <li><a href="hockey-business.html" class="active">Hockey Business</a></li>
-                <li><a href="#contact" class="btn btn-nav">Contact Us</a></li>
+                <li><a href="#contact" class="btn btn-nav" data-track="cta_click">Contact Us</a></li>
             </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-controls="primary-nav-links" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,32 +63,34 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="business-hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <span class="page-badge">Beyond The Ice</span>
             <h1>The Business of Hockey</h1>
-            <p class="hero-subtitle">From NHL player to top hockey agent — Drew Shore brings unmatched insight into building a successful hockey career on and off the ice</p>
+            <p class="hero-subtitle">From NHL player to trusted hockey advisor, Drew Shore brings direct insight into career development on and off the ice</p>
+            <div class="hero-actions" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+                <a data-config-link="calendlyUrl" data-track="calendly_click" class="btn btn-primary" aria-label="Book a consultation on Calendly">Book Consultation</a>
+                <a href="#contact" class="btn btn-secondary" data-track="cta_click">Send Inquiry</a>
+            </div>
         </div>
     </header>
 
-    <!-- Drew's Agent Background -->
     <section class="section agent-intro">
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-image">
-                    <img src="drew-shore.png" alt="Drew Shore - Hockey Agent and Former NHL Player" class="drew-business-photo">
+                    <img src="drew-shore.jpg" alt="Drew Shore - Hockey Agent and Former NHL Player" class="drew-business-photo" loading="lazy" decoding="async" width="293" height="282">
                     <div class="credentials-badge">
                         <span class="badge-title">Drew Shore</span>
-                        <span class="badge-subtitle">NHL Player | Hockey Agent | Business Advisor</span>
+                        <span class="badge-subtitle">NHL Player | Hockey Advisor | Business Strategist</span>
                     </div>
                 </div>
                 <div class="intro-content">
                     <h2>A Unique Perspective on Hockey</h2>
-                    <p class="lead">Drew Shore isn't just a former NHL player — he's one of the top hockey agents in the industry, with deep expertise in contract negotiations, career management, and the business side of professional hockey.</p>
-                    <p>After his playing career, Drew transitioned into player representation, where he quickly established himself as a trusted advisor for professional hockey players. His firsthand experience in the NHL, combined with his business acumen, gives him a unique ability to guide players through every aspect of their careers.</p>
-                    <p>At Shore Hockey Academy, Drew shares this invaluable knowledge with players and families who want to understand what it really takes to build a successful career in hockey — from youth hockey all the way to the pros.</p>
+                    <p class="lead">Drew Shore is a former NHL player and a trusted advisor with deep experience in career management, recruiting strategy, and the business side of hockey.</p>
+                    <p>After his playing career, Drew transitioned into player representation and advisory services. His firsthand experience in elite hockey combined with business insight gives families a practical edge in high-stakes career decisions.</p>
+                    <p>At Shore Hockey Academy, Drew shares this knowledge with players and families looking to understand what it really takes to build a long-term path in hockey.</p>
 
                     <div class="drew-stats">
                         <div class="stat-item">
@@ -69,11 +99,11 @@
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">Agent</span>
-                            <span class="stat-label">Player Representation</span>
+                            <span class="stat-label">Representation Experience</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">$M+</span>
-                            <span class="stat-label">Contracts Negotiated</span>
+                            <span class="stat-label">Contracts Supported</span>
                         </div>
                     </div>
                 </div>
@@ -81,243 +111,128 @@
         </div>
     </section>
 
-    <!-- What We Offer -->
     <section class="section services">
         <div class="container">
             <h2 class="section-title">Hockey Business Education</h2>
             <p class="section-subtitle">Comprehensive guidance on the business side of hockey for players and families</p>
 
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3>Career Path Planning</h3>
-                    <p>Understand the realistic pathway from youth hockey to college, juniors, and professional hockey. Learn what scouts look for, when to make key decisions, and how to position yourself for success.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3>College Hockey Recruiting</h3>
-                    <p>Navigate the complex world of NCAA recruiting, scholarship opportunities, and academic requirements. Drew has connections with programs across Division I and knows what coaches are looking for.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                        </svg>
-                    </div>
-                    <h3>Contract Education</h3>
-                    <p>Learn how professional contracts work — from entry-level deals to free agency. Understand salary caps, bonuses, no-trade clauses, and what to look for when evaluating offers.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                        </svg>
-                    </div>
-                    <h3>Agent Selection</h3>
-                    <p>When it's time to sign with an agent, know what to look for. Drew provides honest guidance on evaluating agents, understanding fee structures, and avoiding common pitfalls.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h3>Financial Planning</h3>
-                    <p>Professional hockey careers are short. Learn about financial management, investment strategies, and planning for life after hockey from someone who's been through it.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3>Building Your Brand</h3>
-                    <p>In today's hockey world, your personal brand matters. Learn how to present yourself professionally, leverage social media, and build relationships that advance your career.</p>
-                </div>
+                <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg></div><h3>Career Path Planning</h3><p>Understand realistic pathways from youth hockey to college, juniors, and professional levels. Learn when key decisions matter most.</p></div>
+                <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div><h3>College Recruiting</h3><p>Navigate NCAA recruiting timelines, scholarship realities, and communication strategy with coaches and programs.</p></div>
+                <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg></div><h3>Contract Education</h3><p>Learn how pro contracts work including entry-level structures, bonuses, clauses, and negotiation dynamics.</p></div>
+                <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg></div><h3>Agent Selection</h3><p>Evaluate agent fit, fee structures, and long-term incentives so families can make informed representation decisions.</p></div>
+                <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div><h3>Financial Planning</h3><p>Build financial discipline early and understand cash-flow and risk decisions common across elite hockey careers.</p></div>
+                <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><h3>Brand Development</h3><p>Develop a credible personal brand and communication strategy across coaches, teams, and public channels.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- The Agent's Perspective -->
     <section class="section agent-perspective">
         <div class="container">
             <div class="perspective-content">
-                <h2>The Agent's Perspective</h2>
+                <h2>The Advisor's Perspective</h2>
                 <blockquote>
-                    "Playing in the NHL taught me the game. Being an agent taught me the business. Most players and families have no idea how the hockey industry really works until they're already in it. I want to change that."
-                    <cite>— Drew Shore</cite>
+                    "Playing in the NHL taught me the game. Advising players taught me the business. Most families don't get this perspective early enough."
+                    <cite>- Drew Shore</cite>
                 </blockquote>
                 <div class="perspective-details">
                     <div class="detail-item">
                         <h4>What Most Players Don't Know</h4>
-                        <p>The path to professional hockey is filled with decisions that can make or break a career. Which junior league is right? When should you go to college vs. turn pro? How do contract negotiations really work? Drew has seen it all from both sides — as a player and as the person negotiating the deals.</p>
+                        <p>The path to professional hockey is full of decisions that can shape outcomes for years. Drew has seen these decisions from both player and advisory sides.</p>
                     </div>
                     <div class="detail-item">
-                        <h4>Why This Matters Early</h4>
-                        <p>By the time most families think about the business side of hockey, critical decisions have already been made. Understanding the landscape early — even at the youth hockey level — helps families make informed choices that set players up for long-term success.</p>
+                        <h4>Why It Matters Early</h4>
+                        <p>By the time many families focus on the business side, key opportunities are already gone. Earlier strategy creates better options later.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Programs -->
     <section class="section business-programs">
         <div class="container">
             <h2 class="section-title">Programs & Consultations</h2>
-            <p class="section-subtitle">Access Drew's expertise through our specialized business programs</p>
+            <p class="section-subtitle">Access Drew's expertise through specialized advisory programs</p>
 
             <div class="programs-grid">
                 <div class="program-card">
                     <h3>Family Consultation</h3>
-                    <div class="program-price">
-                        <span class="price-amount">$1,000</span>
-                        <span class="price-period">/ 90-minute session</span>
-                    </div>
-                    <p>One-on-one consultation with Drew Shore for families navigating the hockey pathway. Discuss your player's specific situation, goals, and get personalized guidance on next steps.</p>
+                    <div class="program-price"><span class="price-amount">$1,000</span><span class="price-period">/ 90-minute session</span></div>
+                    <p>One-on-one consultation for families navigating hockey pathway decisions with personalized guidance and next-step planning.</p>
                     <ul class="program-includes">
                         <li>90-minute video or in-person session</li>
                         <li>Career pathway analysis</li>
                         <li>Recruiting strategy discussion</li>
-                        <li>Follow-up email summary</li>
+                        <li>Follow-up summary and action plan</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary btn-full">Schedule Consultation</a>
+                    <a data-config-link="calendlyUrl" data-track="calendly_click" class="btn btn-primary btn-full">Book on Calendly</a>
                 </div>
 
                 <div class="program-card featured">
                     <div class="featured-badge">Comprehensive</div>
                     <h3>Elite Player Package</h3>
-                    <div class="program-price">
-                        <span class="price-amount">$2,500</span>
-                        <span class="price-period">/ 6-month program</span>
-                    </div>
-                    <p>Ongoing advisory services for elite players seriously pursuing college or professional hockey. Regular check-ins, recruiting coordination, and strategic career planning.</p>
+                    <div class="program-price"><span class="price-amount">$2,500</span><span class="price-period">/ 6-month program</span></div>
+                    <p>Ongoing advisory services for players pursuing college or professional opportunities with structured strategic support.</p>
                     <ul class="program-includes">
                         <li>Monthly consultation calls</li>
-                        <li>College recruiting coordination</li>
+                        <li>Recruiting coordination guidance</li>
                         <li>Video review and feedback</li>
-                        <li>Agent selection guidance (when ready)</li>
-                        <li>Direct access to Drew via text/email</li>
+                        <li>Agent selection advisory (when appropriate)</li>
+                        <li>Direct support access</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary btn-full">Apply Now</a>
+                    <a href="#contact" class="btn btn-primary btn-full" data-track="cta_click">Apply Now</a>
                 </div>
 
                 <div class="program-card">
                     <h3>Business of Hockey Seminar</h3>
-                    <div class="program-price">
-                        <span class="price-amount">$500</span>
-                        <span class="price-period">/ per family</span>
-                    </div>
-                    <p>Group seminar covering the business fundamentals every hockey family should know. Held quarterly at Shore Hockey Academy with Q&A session included.</p>
+                    <div class="program-price"><span class="price-amount">$500</span><span class="price-period">/ per family</span></div>
+                    <p>Group seminar covering recruiting, contracts, agent strategy, and the core business fundamentals every hockey family should know.</p>
                     <ul class="program-includes">
                         <li>3-hour in-person seminar</li>
-                        <li>Covers recruiting, contracts, agents</li>
-                        <li>Q&A with Drew Shore</li>
+                        <li>Recruiting and contracts breakdown</li>
+                        <li>Live Q&A with Drew Shore</li>
                         <li>Resource guide included</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary btn-full">Register Interest</a>
+                    <a href="#contact" class="btn btn-primary btn-full" data-track="cta_click">Register Interest</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Topics Covered -->
     <section class="section topics">
         <div class="container">
             <h2 class="section-title">Topics We Cover</h2>
             <div class="topics-grid">
-                <div class="topic-item">
-                    <h4>The Draft Process</h4>
-                    <p>How the NHL Draft works, what scouts look for, and realistic expectations</p>
-                </div>
-                <div class="topic-item">
-                    <h4>Junior Hockey Leagues</h4>
-                    <p>USHL, NAHL, USNTDP, CHL — understanding your options and implications</p>
-                </div>
-                <div class="topic-item">
-                    <h4>NCAA Eligibility</h4>
-                    <p>Protecting your college eligibility while pursuing competitive hockey</p>
-                </div>
-                <div class="topic-item">
-                    <h4>Entry-Level Contracts</h4>
-                    <p>How ELCs work, signing bonuses, and performance incentives</p>
-                </div>
-                <div class="topic-item">
-                    <h4>Free Agency</h4>
-                    <p>RFA vs. UFA, qualifying offers, and maximizing your value</p>
-                </div>
-                <div class="topic-item">
-                    <h4>European Options</h4>
-                    <p>Playing overseas — KHL, SHL, DEL, and other professional leagues</p>
-                </div>
-                <div class="topic-item">
-                    <h4>NHLPA & CBA</h4>
-                    <p>Understanding player rights, the union, and collective bargaining</p>
-                </div>
-                <div class="topic-item">
-                    <h4>Life After Hockey</h4>
-                    <p>Career transition planning and leveraging your hockey experience</p>
-                </div>
+                <div class="topic-item"><h4>The Draft Process</h4><p>How the NHL Draft works and what scouts evaluate</p></div>
+                <div class="topic-item"><h4>Junior Hockey Leagues</h4><p>USHL, NAHL, USNTDP, CHL pathway decisions</p></div>
+                <div class="topic-item"><h4>NCAA Eligibility</h4><p>Protecting eligibility while pursuing high-level opportunities</p></div>
+                <div class="topic-item"><h4>Entry-Level Contracts</h4><p>ELC structures, bonuses, and evaluation points</p></div>
+                <div class="topic-item"><h4>Free Agency</h4><p>RFA vs UFA strategy and leverage</p></div>
+                <div class="topic-item"><h4>European Options</h4><p>KHL, SHL, DEL and other overseas considerations</p></div>
+                <div class="topic-item"><h4>NHLPA & CBA</h4><p>Player rights and key CBA business rules</p></div>
+                <div class="topic-item"><h4>Life After Hockey</h4><p>Career transition planning and identity strategy</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Interested in learning more about the business of hockey? Reach out to schedule a consultation.</p>
+            <p class="section-subtitle">Interested in the business side of hockey? Reach out to schedule a consultation.</p>
 
             <div class="contact-grid">
                 <div class="contact-info-card">
                     <h3>Contact Information</h3>
                     <div class="contact-details">
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>business@shorehockeyacademy.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>Denver, Colorado</span>
-                        </div>
+                        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><span>business@shorehockeyacademy.com</span></div>
+                        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Denver, Colorado</span></div>
                     </div>
-                    <p class="contact-note">All inquiries are handled confidentially. Drew personally reviews every consultation request.</p>
+                    <p class="contact-note">All inquiries are handled confidentially. Drew personally reviews consultation requests.</p>
+                    <p style="margin-top: 18px;"><a data-config-link="calendlyUrl" data-track="calendly_click" class="btn btn-secondary">Book Directly on Calendly</a></p>
                 </div>
 
-                <form class="contact-form" id="businessContactForm">
+                <form class="contact-form" id="businessContactForm" data-form-type="business" data-api-endpoint="/api/leads/business" novalidate>
+                    <input type="text" name="company" autocomplete="off" tabindex="-1" class="hp-field" aria-hidden="true">
                     <div class="form-group">
                         <label for="name">Your Name *</label>
                         <input type="text" id="name" name="name" required>
@@ -348,13 +263,17 @@
                         <label for="message">Tell Us More</label>
                         <textarea id="message" name="message" rows="4" placeholder="Share details about your situation and what you're hoping to learn..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+                    <div class="form-consent">
+                        <input type="checkbox" id="consentPolicy" name="consentPolicy" value="yes" required>
+                        <label for="consentPolicy">I agree to the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a>. *</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-track="cta_click">Send Inquiry</button>
+                    <p class="form-note">We'll follow up by email with next steps and scheduling options.</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -363,13 +282,15 @@
                     <span class="logo-subtext">HOCKEY ACADEMY</span>
                 </div>
                 <p class="footer-tagline">Developing the next generation of hockey excellence</p>
+                <p class="footer-links"><a href="index.html">Home</a> | <a href="summer-camp.html">Summer Camp</a> | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shore Hockey Academy. All rights reserved.</p>
+                <p>&copy; <span class="current-year"></span> Shore Hockey Academy. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="site-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,39 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shore Hockey Academy | Elite Hockey Training</title>
-    <meta name="description" content="Shore Hockey Academy - Elite hockey training led by former NHL player Drew Shore. Train with the best in Denver, Colorado.">
+    <title>Shore Hockey Academy | Elite Hockey Training in Denver</title>
+    <meta name="description" content="Train with Shore Hockey Academy in Denver. Elite summer camp, skills development, and private lessons led by NHL veterans.">
+    <link rel="canonical" href="https://shorehockeyacademy.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shore Hockey Academy | Elite Hockey Training in Denver">
+    <meta property="og:description" content="Elite hockey training and Summer 2026 camp programs led by NHL veterans.">
+    <meta property="og:url" content="https://shorehockeyacademy.com/">
+    <meta property="og:image" content="https://shorehockeyacademy.com/drew-shore-action.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shore Hockey Academy | Elite Hockey Training in Denver">
+    <meta name="twitter:description" content="Elite hockey training and Summer 2026 camp programs led by NHL veterans.">
+    <meta name="twitter:image" content="https://shorehockeyacademy.com/drew-shore-action.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function gtag(){ window.dataLayer.push(arguments); };
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Shore Hockey Academy",
+      "url": "https://shorehockeyacademy.com",
+      "email": "info@shorehockeyacademy.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://instagram.com/shorehockeyacademy"
+      ]
+    }
+    </script>
 </head>
-<body>
+<body data-page="home">
     <!-- Urgency Banner -->
-    <div class="urgency-banner">
+    <div class="urgency-banner" role="status" aria-live="polite">
         <div class="container">
-            <span class="urgency-icon">🏒</span>
-            <span class="urgency-text"><strong>Summer 2025 Camp:</strong> Only <span class="spots-count">12 spots</span> remaining</span>
-            <a href="#register" class="urgency-cta">Reserve Your Spot</a>
+            <span class="urgency-icon" aria-hidden="true">🏒</span>
+            <span class="urgency-text"><strong>Summer 2026 Camp:</strong> Provisional schedule now open. <span class="spots-count">Limited spots</span> per session.</span>
+            <a href="#register" class="urgency-cta" data-track="cta_click">Reserve Your Spot</a>
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo" aria-label="Shore Hockey Academy home">
                 <span class="logo-text">SHORE</span>
                 <span class="logo-subtext">HOCKEY ACADEMY</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#team">Our Team</a></li>
                 <li><a href="summer-camp.html">Summer Camp</a></li>
                 <li><a href="hockey-business.html">Hockey Business</a></li>
-                <li><a href="#register" class="btn btn-nav">Register Now</a></li>
+                <li><a href="#register" class="btn btn-nav" data-track="cta_click">Register Now</a></li>
             </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-controls="primary-nav-links" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -45,8 +77,7 @@
 
     <!-- Hero Section with Video Background -->
     <header class="hero">
-        <!-- Video Background - Using free Pexels hockey footage -->
-        <video class="hero-video" autoplay muted loop playsinline>
+        <video class="hero-video" autoplay muted loop playsinline preload="none" poster="drew-shore-action.jpg" aria-hidden="true">
             <source src="https://videos.pexels.com/video-files/2890234/2890234-uhd_2560_1440_30fps.mp4" type="video/mp4">
         </video>
         <div class="hero-video-overlay"></div>
@@ -55,14 +86,14 @@
             <h1>Train Like a Pro</h1>
             <p class="hero-subtitle">Elite hockey training from former NHL player Drew Shore</p>
             <p class="hero-tagline">Develop your skills. Build your confidence. Reach your potential.</p>
-            <a href="#register" class="btn btn-primary btn-large">Sign Up for Camp</a>
+            <a href="#register" class="btn btn-primary btn-large" data-track="cta_click">Sign Up for Camp</a>
         </div>
     </header>
 
     <!-- Sticky CTA Button -->
     <div class="sticky-cta">
-        <a href="#register" class="btn btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="#register" class="btn btn-primary" data-track="cta_click">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                 <circle cx="8.5" cy="7" r="4"></circle>
                 <line x1="20" y1="8" x2="20" y2="14"></line>
@@ -78,8 +109,8 @@
             <h2 class="section-title">About Drew Shore</h2>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="drew-shore.png" alt="Drew Shore - Former NHL Player and Founder of Shore Hockey Academy" class="drew-photo">
-                    <img src="drew-shore-action.png" alt="Drew Shore playing for the Calgary Flames in the NHL" class="drew-photo action-photo">
+                    <img src="drew-shore.jpg" alt="Drew Shore - Former NHL Player and Founder of Shore Hockey Academy" class="drew-photo" loading="lazy" decoding="async" width="293" height="282">
+                    <img src="drew-shore-action.jpg" alt="Drew Shore playing for the Calgary Flames in the NHL" class="drew-photo action-photo" loading="lazy" decoding="async" width="406" height="322">
                 </div>
                 <div class="about-content">
                     <h3>From Denver to the NHL</h3>
@@ -112,7 +143,7 @@
             <p class="section-subtitle">Comprehensive training programs designed for players of all skill levels</p>
             <div class="programs-grid">
                 <div class="program-card">
-                    <div class="program-icon">
+                    <div class="program-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 6v6l4 2"></path>
@@ -125,11 +156,11 @@
                         <li>Top players in the country</li>
                         <li>Small group instruction</li>
                     </ul>
-                    <a href="summer-camp.html" class="btn btn-primary" style="margin-top: 20px;">Learn More</a>
+                    <a href="summer-camp.html" class="btn btn-primary" style="margin-top: 20px;" data-track="cta_click">Learn More</a>
                 </div>
                 <div class="program-card featured">
                     <div class="featured-badge">Most Popular</div>
-                    <div class="program-icon">
+                    <div class="program-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>
@@ -143,7 +174,7 @@
                     </ul>
                 </div>
                 <div class="program-card">
-                    <div class="program-icon">
+                    <div class="program-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
@@ -169,27 +200,25 @@
             <h2 class="section-title">Our Team</h2>
             <p class="section-subtitle">Learn from the best in the game</p>
 
-            <!-- Founder -->
             <div class="team-founder">
                 <div class="founder-card">
                     <div class="founder-image">
-                        <img src="drew-shore.png" alt="Drew Shore - Founder" class="drew-photo founder-photo">
+                        <img src="drew-shore.jpg" alt="Drew Shore - Founder" class="drew-photo founder-photo" loading="lazy" decoding="async" width="293" height="282">
                     </div>
                     <div class="founder-info">
                         <h3>Drew Shore</h3>
-                        <span class="role">Founder & Head Instructor</span>
+                        <span class="role">Founder &amp; Head Instructor</span>
                         <p>Former NHL player and University of Denver standout, Drew brings years of professional experience to every session. His mission is to share the knowledge and skills that took him to the highest level of hockey.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Coaching Staff - Shore Brothers -->
             <h3 class="subsection-title">Coaching Staff</h3>
             <p class="subsection-subtitle">The Shore family brings elite hockey experience at every level</p>
             <div class="coaches-grid">
                 <div class="coach-card">
                     <div class="coach-image">
-                        <img src="nick-shore.png" alt="Nick Shore - Coach" class="coach-photo">
+                        <img src="nick-shore.jpg" alt="Nick Shore - Coach" class="coach-photo" loading="lazy" decoding="async" width="173" height="184">
                     </div>
                     <h4>Nick Shore</h4>
                     <span class="coach-role">Coach</span>
@@ -197,7 +226,7 @@
                 </div>
                 <div class="coach-card">
                     <div class="coach-image">
-                        <img src="quintin-shore.png" alt="Quintin Shore - Coach" class="coach-photo">
+                        <img src="quintin-shore.jpg" alt="Quintin Shore - Coach" class="coach-photo" loading="lazy" decoding="async" width="253" height="352">
                     </div>
                     <h4>Quintin Shore</h4>
                     <span class="coach-role">Coach</span>
@@ -205,7 +234,7 @@
                 </div>
                 <div class="coach-card">
                     <div class="coach-image">
-                        <img src="baker-shore.png" alt="Baker Shore - Coach" class="coach-photo">
+                        <img src="baker-shore.jpg" alt="Baker Shore - Coach" class="coach-photo" loading="lazy" decoding="async" width="326" height="489">
                     </div>
                     <h4>Baker Shore</h4>
                     <span class="coach-role">Coach</span>
@@ -213,13 +242,12 @@
                 </div>
             </div>
 
-            <!-- Advisers -->
             <h3 class="subsection-title">Advisers</h3>
             <p class="subsection-subtitle">Guidance from NHL veterans and hockey professionals</p>
             <div class="advisors-grid">
                 <div class="advisor-card">
                     <div class="advisor-image">
-                        <img src="tyler-bozak.png" alt="Tyler Bozak - Stanley Cup Champion" class="advisor-photo">
+                        <img src="tyler-bozak.jpg" alt="Tyler Bozak - Stanley Cup Champion" class="advisor-photo" loading="lazy" decoding="async" width="900" height="675">
                     </div>
                     <h4>Tyler Bozak</h4>
                     <span class="advisor-role">Adviser</span>
@@ -227,7 +255,7 @@
                 </div>
                 <div class="advisor-card">
                     <div class="advisor-image">
-                        <img src="kyle-quincey.png" alt="Kyle Quincey - NHL Veteran" class="advisor-photo">
+                        <img src="kyle-quincey.jpg" alt="Kyle Quincey - NHL Veteran" class="advisor-photo" loading="lazy" decoding="async" width="354" height="493">
                     </div>
                     <h4>Kyle Quincey</h4>
                     <span class="advisor-role">Adviser</span>
@@ -235,7 +263,7 @@
                 </div>
                 <div class="advisor-card">
                     <div class="advisor-image">
-                        <img src="david-carle.png" alt="David Carle - University of Denver Head Coach" class="advisor-photo">
+                        <img src="david-carle.jpg" alt="David Carle - University of Denver Head Coach" class="advisor-photo" loading="lazy" decoding="async" width="470" height="562">
                     </div>
                     <h4>David Carle</h4>
                     <span class="advisor-role">Adviser</span>
@@ -243,7 +271,7 @@
                 </div>
                 <div class="advisor-card">
                     <div class="advisor-image">
-                        <img src="avalanche-logo.png" alt="Colorado Avalanche Alumni" class="advisor-photo avalanche-logo">
+                        <img src="avalanche-logo.png" alt="Colorado Avalanche Alumni" class="advisor-photo avalanche-logo" loading="lazy" decoding="async" width="1500" height="1500">
                     </div>
                     <h4>Avalanche Alumni</h4>
                     <span class="advisor-role">Adviser</span>
@@ -263,39 +291,40 @@
                     <h3>What to Expect</h3>
                     <ul class="expect-list">
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             Professional coaching from NHL veterans
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             Small group sizes for personalized attention
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             State-of-the-art training facilities
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             Video analysis and progress tracking
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
                             Certificate of completion
                         </li>
                     </ul>
                 </div>
-                <form class="register-form" id="registrationForm">
+                <form class="register-form" id="registrationForm" data-form-type="camp" data-api-endpoint="/api/leads/camp" novalidate>
                     <h3>Player Information</h3>
+                    <input type="text" name="company" autocomplete="off" tabindex="-1" class="hp-field" aria-hidden="true">
                     <div class="form-group">
                         <label for="playerName">Player's Full Name *</label>
                         <input type="text" id="playerName" name="playerName" required>
@@ -303,7 +332,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="playerAge">Player's Age *</label>
-                            <input type="number" id="playerAge" name="playerAge" min="5" max="18" required>
+                            <input type="number" id="playerAge" name="playerAge" min="5" max="20" required>
                         </div>
                         <div class="form-group">
                             <label for="skillLevel">Skill Level *</label>
@@ -320,8 +349,8 @@
                         <label for="program">Program Interest *</label>
                         <select id="program" name="program" required>
                             <option value="">Select a program</option>
-                            <option value="summer-camp">Summer Hockey Camp</option>
-                            <option value="elite-skills">Elite Skills Development</option>
+                            <option value="summer-camp-2026">Summer Hockey Camp 2026</option>
+                            <option value="elite-skills-development">Elite Skills Development</option>
                             <option value="private-lessons">Private Lessons</option>
                         </select>
                     </div>
@@ -343,7 +372,11 @@
                         <label for="message">Additional Information</label>
                         <textarea id="message" name="message" rows="3" placeholder="Tell us about your player's goals, any medical considerations, or questions you have..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Submit Registration</button>
+                    <div class="form-consent">
+                        <input type="checkbox" id="consentPolicy" name="consentPolicy" value="yes" required>
+                        <label for="consentPolicy">I am a parent/legal guardian and I agree to the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a>. *</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-track="cta_click">Submit Registration</button>
                     <p class="form-note">We'll contact you within 24-48 hours to confirm your registration and discuss program details.</p>
                 </form>
             </div>
@@ -359,14 +392,14 @@
                     <p>Have questions about our programs? We'd love to hear from you.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                             <span>info@shorehockeyacademy.com</span>
                         </div>
                         <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
@@ -374,20 +407,20 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a data-config-link="socialInstagramUrl" data-track="outbound_social_click" data-platform="instagram" aria-label="Instagram" class="is-hidden">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a data-config-link="socialXUrl" data-track="outbound_social_click" data-platform="x" aria-label="X" class="is-hidden">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                             </svg>
                         </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a data-config-link="socialFacebookUrl" data-track="outbound_social_click" data-platform="facebook" aria-label="Facebook" class="is-hidden">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
@@ -397,14 +430,13 @@
                     <div class="cta-card">
                         <h3>Ready to Start?</h3>
                         <p>Join Shore Hockey Academy and take your game to the next level.</p>
-                        <a href="#register" class="btn btn-primary">Register Today</a>
+                        <a href="#register" class="btn btn-primary" data-track="cta_click">Register Today</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -413,13 +445,15 @@
                     <span class="logo-subtext">HOCKEY ACADEMY</span>
                 </div>
                 <p class="footer-tagline">Developing the next generation of hockey excellence</p>
+                <p class="footer-links"><a href="summer-camp.html">Summer Camp</a> | <a href="hockey-business.html">Hockey Business</a> | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shore Hockey Academy. All rights reserved.</p>
+                <p>&copy; <span class="current-year"></span> Shore Hockey Academy. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="site-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -456,3 +456,7 @@
         grid-template-columns: 1fr;
     }
 }
+
+.hero-actions .btn {
+    min-width: 180px;
+}
